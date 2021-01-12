@@ -53,7 +53,7 @@ class FeedComponent implements OnInit {
       fetchPolicy: 'network-only',
     });
 
-    this.feed = this.feedQuery
+    this.feedQuery
       .valueChanges
       .subscribe(({data}) => {
         this.feed = data.feed;
